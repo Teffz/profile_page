@@ -1,0 +1,450 @@
+
+html {
+  scroll-behavior: smooth; /* Aplica um efeito suave de rolagem quando o usuário navega pela página */
+}
+
+body {
+  margin: 0; /* Remove a margem padrão do body */
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; /* Define a família de fontes usada no site */
+  font-weight: 500; /* Define o peso da fonte (peso médio) */
+  font-size: 8px; /* Define o tamanho da fonte (muito pequeno, pode ser ajustado conforme necessário) */
+  background-image: url('images/seu-animated-background.gif'); /* Define uma imagem de fundo para o site */
+  background-size: cover; /* Faz com que a imagem de fundo cubra todo o espaço disponível */
+  color: #fff; /* Define a cor do texto como branco */
+  cursor: cursor; /* Define o tipo de cursor para o padrão */
+}
+
+
+
+
+
+
+
+
+/* Botão de download */
+.btn-download {
+  display: inline-block;
+  background-color: #455e79; /* Azul */
+  color: #fff; /* Texto branco */
+  padding: 10px 25px; /* Espaçamento interno */
+  border-radius: 10px; /* Bordas arredondadas */
+  text-decoration: none; /* Remove sublinhado */
+  font-weight: bold; /* Texto em negrito */
+  transition: background-color 0.3s ease;
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; /* Define a família de fontes usada no site */
+  font-weight: 500; /* Define o peso da fonte (peso médio) */
+  font-size: 11px; /* Define o tamanho da fonte (muito pequeno, pode ser ajustado conforme necessário) */
+}
+
+.btn-download:hover {
+  background-color: #0056b3; /* Azul mais escuro no hover */
+}
+
+
+
+
+
+
+
+
+
+
+#about {
+  padding: 40px 20px; /* Define o preenchimento interno do elemento com espaçamento superior/inferior de 40px e lateral de 10px */
+  background-color: #5d737e; /* Define a cor de fundo do elemento com uma cor específica */
+  text-align: center; /* Centraliza o texto dentro do elemento */
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; /* Define a família de fontes usada no site */
+  
+
+}
+
+#about h2 {
+  font-size: 5em; /* Define o tamanho da fonte do título */
+  color: #f3f3f3; /* Define a cor do título */
+  margin-bottom: 30px; /* Define a margem inferior do título */
+  font-weight: 700; /* Define o peso da fonte como negrito */
+  text-transform: uppercase; /* Converte o texto para letras maiúsculas */
+  letter-spacing: 1px; /* Define o espaçamento entre as letras */
+  
+}
+
+.about-container {
+  display: flex; /* Define o layout flexível para os itens dentro do container */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  justify-content: center; /* Alinha os itens horizontalmente no centro */
+  flex-wrap: wrap; /* Permite que os itens se ajustem para a linha seguinte, se necessário */
+  gap: 20px; /* Define o espaço entre os itens */
+  max-width: 900px; /* Define a largura máxima do container */
+  margin: 0 auto; /* Centraliza o container na página */
+  padding: 30px; /* Define o preenchimento interno do container */
+  background-color: #ffffff; /* Define o fundo do container como branco */
+  border-radius: 40px; /* Adiciona bordas arredondadas ao container */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave ao redor do container */
+  transition: transform 0.2s ease-in-out; /* Aplica uma transição suave ao aplicar transformações */
+}
+
+.about-container:hover {
+  transform: scale(1.03); /* Aumenta o tamanho do container quando ele é passado com o mouse (hover) */
+}
+
+#profile-photo {
+  width: 350px; /* Define a largura da imagem do perfil */
+  height: 350px; /* Define a altura da imagem do perfil */
+  border-radius: 50%; /* Torna a imagem circular */
+  object-fit: cover; /* Ajusta a imagem para cobrir totalmente o espaço da caixa, sem distorções */
+  border: 4px solid #5d737e; /* Adiciona uma borda ao redor da imagem */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil ao redor da imagem */
+}
+
+.info {
+  max-width: 500px; /* Define a largura máxima do elemento de informação */
+  text-align: left; /* Alinha o texto à esquerda */
+  color: #5d737e; /* Define a cor do texto */
+  font-size: 1em; /* Define o tamanho da fonte */
+  line-height: 1.4; /* Define o espaçamento entre as linhas de texto */
+}
+
+.info p {
+  margin-bottom: 15px; /* Define a margem inferior para os parágrafos */
+  color: #2c3e50; /* Define a cor do texto do parágrafo */
+}
+
+
+
+section {
+  padding: 20px; /* Define o preenchimento interno do elemento */
+  margin: 10px auto; /* Define a margem ao redor do elemento */
+  max-width: 1000px; /* Define a largura máxima da seção */
+  background-color: #5d737e; /* Define o fundo da seção */
+  border-radius: 8px; /* Adiciona bordas arredondadas */
+  box-shadow: 0 30px 15px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao redor da seção */
+}
+
+nav {
+  position: fixed; /* Torna a barra de navegação fixa na parte superior */
+  top: 0; /* Posiciona o nav no topo da página */
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; /* Define a família de fontes do nav */
+  font-size: 40px; /* Define o tamanho da fonte */
+  width: 100%; /* Faz com que a largura do nav ocupe toda a largura da página */
+  background: rgba(0, 0, 0, 0.9); /* Define um fundo escuro e semi-transparente */
+  box-shadow: 0 30px 5px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave ao redor do nav */
+  z-index: 1000; /* Garante que o nav fique sobre outros elementos */
+  text-transform: uppercase; /* Converte o texto para maiúsculas */
+}
+
+nav ul {
+  list-style: none; /* Remove a lista de marcadores padrão */
+  display: flex; /* Exibe os itens da lista em linha */
+  justify-content: flex-end; /* Alinha os itens à direita */
+  padding: 0; /* Remove o preenchimento interno */
+  margin: 0; /* Remove a margem */
+}
+
+nav ul li {
+  margin: 0 30px; /* Define a margem entre os itens de lista */
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: rgb(255, 255, 255); /* Define a cor dos links como branco */
+  font-size: 16px; /* Define o tamanho da fonte */
+  transition: color 0.3s; /* Aplica uma transição de cor suave ao passar o mouse */
+  outline: none; /* Remove o contorno do link quando focado */
+}
+
+nav ul li a:hover {
+  color: rgb(52, 51, 134); /* Muda a cor do link ao passar o mouse */
+}
+
+h2 {
+  text-transform: uppercase; /* Converte o texto para maiúsculas */
+  font-size: 4em; /* Define o tamanho da fonte */
+  margin-bottom: 40px; /* Define a margem inferior */
+  color: rgb(252, 252, 252); /* Define a cor do texto */
+  text-align: center; /* Centraliza o texto */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.projects-grid {
+  display: grid; /* Define o layout de grid */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Cria colunas responsivas */
+  gap: 40px; /* Define o espaçamento entre os itens */
+}
+
+.project-card {
+  background: #4c5b64; /* Cor de fundo */
+  padding: 30px; /* Preenchimento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  text-align: center; /* Centraliza o texto */
+  color: #000; /* Cor do texto */
+  font-weight: bold; /* Negrito para o texto */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Sombra inicial */
+  transition: transform 0.4s ease, box-shadow 0.4s ease; /* Suaviza o hover */
+  position: relative; /* Garante que o z-index funcione */
+  cursor: pointer; /* Mostra que o item é clicável */
+}
+
+.project-card:hover {
+  transform: scale(1.1); /* Aumenta o tamanho do botão */
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.5); /* Sombra mais forte */
+  z-index: 10; /* Traz o botão para frente */
+}
+
+.project-card a {
+  text-decoration: none; /* Remove sublinhado do link */
+  color: inherit; /* Mantém a cor do texto */
+}
+
+.project-card a:hover {
+  text-decoration: none; /* Garante que o sublinhado não volte no hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#soft-skills .soft-skills {
+  display: flex; /* Exibe os itens de habilidades em linha */
+  flex-wrap: wrap; /* Permite que os itens se ajustem para a linha seguinte, se necessário */
+  justify-content: center; /* Centraliza os itens */
+  gap: 20px; /* Define o espaço entre os itens */
+  margin-top: 20px; /* Define a margem superior */
+
+  
+}
+
+#soft-skills .skill {
+  width: 200px; /* Define a largura das habilidades */
+  text-align: center; /* Centraliza o texto dentro das habilidades */
+  border: 2px solid #000000; /* Adiciona uma borda preta */
+  border-radius: 10px; /* Adiciona bordas arredondadas */
+  padding: 30px; /* Define o preenchimento interno */
+  transition: transform 0.4s; /* Aplica uma transição suave ao aplicar transformações */
+}
+
+#soft-skills .skill:hover {
+  transform: scale(1.05); /* Aumenta o tamanho da habilidade ao passar o mouse */
+}
+
+#soft-skills .icon {
+  display: flex; /* Exibe o ícone em linha */
+  justify-content: center; /* Centraliza o ícone horizontalmente */
+  align-items: center; /* Centraliza o ícone verticalmente */
+  font-family: Andale Mono, monospace; /* Define a família de fontes */
+  width: 50px; /* Define a largura do ícone */
+  height: 50px; /* Define a altura do ícone */
+  border-radius: 50%; /* Torna o ícone circular */
+  background-color: #4ca8af; /* Define a cor de fundo do ícone */
+  color: rgb(241, 241, 241); /* Define a cor do texto do ícone */
+  font-size: 24px; /* Define o tamanho da fonte do ícone */
+  margin-bottom: 15px; /* Define a margem inferior do ícone */
+}
+
+#soft-skills h3 {
+  font-size: 20px; /* Define o tamanho da fonte do título das habilidades */
+  font-weight: bold; /* Define o peso da fonte como negrito */
+  font-family: Arial Narrow, sans-serif; /* Define a família de fontes */
+}
+
+#soft-skills p {
+  font-size: 16px; /* Define o tamanho da fonte do texto */
+  color: #fcfcfc; /* Define a cor do texto */
+  font-family: Arial Narrow, sans-serif; /* Define a família de fontes */
+}
+
+
+
+
+
+
+
+
+
+
+h3 {
+  font-size: 16px; /* Define o tamanho da fonte dos títulos */
+  font-weight: bold; /* Define o peso da fonte como negrito */
+  
+}
+
+p {
+  font-size: 22px; /* Define o tamanho da fonte do parágrafo */
+  color: #fcfcfc; /* Define a cor do texto */
+}
+
+
+
+
+
+
+
+
+
+
+
+#hard-skills .hard-skills {
+  display: grid; /* Define o layout de grid */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Cria colunas que se ajustam automaticamente */
+  gap: 15px; /* Define o espaço entre os itens */
+  justify-items: center; /* Centraliza os itens dentro das células do grid */
+  margin-top: 15px; /* Define a margem superior */
+}
+
+#hard-skills .skill {
+  text-align: center; /* Centraliza o texto */
+  border: 0px solid #050000; /* Adiciona uma borda preta */
+  border-radius: 16px; /* Adiciona bordas mais arredondadas */
+  padding: 20px; /* Define o preenchimento interno */
+  transition: transform 0.5s, box-shadow 1s; /* Aplica transições para transformações e sombras */
+}
+
+#hard-skills .skill:hover {
+  transform: scale(1.15); /* Aumenta o tamanho da habilidade ao passar o mouse */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra ao redor da habilidade */
+}
+
+#hard-skills .icon {
+  display: flex; /* Exibe os ícones em linha */
+  justify-content: center; /* Centraliza os ícones horizontalmente */
+  align-items: center; /* Centraliza os ícones verticalmente */
+  font-size: 40px; /* Define o tamanho da fonte dos ícones */
+  margin-bottom: 20px; /* Define a margem inferior */
+}
+
+#hard-skills h3 {
+  font-size: 16px; /* Define o tamanho da fonte do título das habilidades */
+  font-weight: bold; /* Define o peso da fonte como negrito */
+}
+
+#hard-skills p {
+  font-size: 14px; /* Define o tamanho da fonte do parágrafo */
+  color: #fcfcfc; /* Define a cor do texto */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#contact {
+  padding: 20px; /* Define o preenchimento interno */
+  text-align: center; /* Centraliza o conteúdo dentro do elemento */
+}
+
+.contact-button {
+  display: inline-flex; /* Exibe os botões em linha */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  justify-content: center; /* Alinha os itens horizontalmente no centro */
+  background-color: #36519b; /* Define a cor de fundo do botão */
+  color: white; /* Define a cor do texto como branco */
+  padding: 10px 20px; /* Define o preenchimento do botão */
+  margin: 10px; /* Define a margem ao redor do botão */
+  border-radius: 40px; /* Adiciona bordas arredondadas ao botão */
+  text-decoration: none; /* Remove o sublinhado do link */
+  font-size: 16px; /* Define o tamanho da fonte */
+  font-weight: bold; /* Define o peso da fonte como negrito */
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2); /* Adiciona sombra suave ao redor do botão */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s ease-in-out; /* Aplica transições suaves ao fundo, transformação e sombra */
+}
+
+.contact-button i {
+  margin-right: 10px; /* Define a margem à direita do ícone dentro do botão */
+  font-size: 18px; /* Define o tamanho do ícone */
+}
+
+.contact-button:hover {
+  background-color: #3b7399; /* Muda a cor do fundo ao passar o mouse */
+  transform: translateY(-2px); /* Move o botão ligeiramente para cima ao passar o mouse */
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra maior ao botão */
+}
+
+.contact-button:active {
+  transform: translateY(1px); /* Move o botão para baixo quando pressionado */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil quando pressionado */
+}
+
+.contact-button:first-child {
+  background-color: #db4437; /* Define a cor de fundo do primeiro botão */
+}
+
+.contact-button:first-child:hover {
+  background-color: #88554c; /* Muda a cor de fundo ao passar o mouse sobre o primeiro botão */
+}
+
+.contact-button:nth-child(2) {
+  background-color: #25d366; /* Define a cor de fundo do segundo botão */
+}
+
+.contact-button:nth-child(2):hover {
+  background-color: #128c7e; /* Muda a cor de fundo ao passar o mouse sobre o segundo botão */
+}
+
+.contact-button:last-child {
+  background-color: #14597e; /* Define a cor de fundo do último botão */
+}
+
+.contact-button:last-child:hover {
+  background-color: #3397be; /* Muda a cor de fundo ao passar o mouse sobre o último botão */
+}
+
+.contact-button:nth-child(4) {
+  background-color: white; /* Define a cor de fundo do quarto botão como branco */
+  color: #333; /* Define a cor do texto como cinza escuro */
+  border: 2px solid #333; /* Adiciona uma borda cinza escuro */
+}
+
+.contact-button:nth-child(4):hover {
+  background-color: #333; /* Muda a cor de fundo para cinza escuro */
+  color: white; /* Muda a cor do texto para branco */
+}
+
+.contact-button:nth-child(4) i {
+  color: #333; /* Define a cor do ícone como cinza escuro */
+}
+
+.contact-button:nth-child(4):hover i {
+  color: white; /* Muda a cor do ícone para branco ao passar o mouse */
+}
+
+
+
+
